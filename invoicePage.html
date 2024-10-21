@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Invoice Page</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="stylesheet" href="invoice.css">
+		<script src="invoice.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title"><b><h2>Invoice</h2></b></div>
+			<h4 class = "date" align= "right">
+				<strong>Date:</strong> <span id="current-date"></span>
+			</h4>
+			<p>Thank you for shopping at Lu's!💛</P>
+			<p>See you Soon.</P>
+			<div class="totals">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Quantity</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody id="cart-table-body">
+						<tr>
+							<td id="persons">Person(s)</td>
+							<td class="num-persons"></td>
+							<td class="cost-persons"></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td id="empty-cell"></td>
+							<td colspan="2">Subtotal: <span id="subtotal">$0.00</span></td>
+						</tr>
+						<tr>
+							<td id="empty-cell"></td>
+							<td colspan="2">Tax: <span id="tax">$0.00</span></td>
+						</tr>
+						<tr>
+							<td id="empty-cell"></td>
+							<td colspan="2">Discount: <span id="discount">$0.00</span></td>
+						</tr>
+						<tr>
+							<td id="empty-cell"></td>
+							<td colspan="2"><strong>Total:</strong> <span id="total">$0.00</span></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+
+			<button onclick="cancelInvoice()" class= "cancel" >Cancel</button>
+			<button id="exitBtn" onclick="exitPage()" class="exit">Exit</button>
+			
+			<p><i>You’re all booked for High Tea at Lulu’s! We’ll reach out via email the day before to confirm your attendance. </i></p></br></br></br></br>
+	
+		</div>	<!--END CONTAINER-->
+		<div id="modal" class="modal">
+			<div class="modal-content">
+				<p id="modal-message">Are you sure you want to cancel your invoice?</p>
+				<div class="modal-buttons">
+					<button id="confirm-btn">Yes</button>
+					<button id="cancel-btn">No</button>
+				</div>
+			</div>
+		</div>
+			
+		<div id="modalEx" class="modalEx">
+			<div class="modal-content">
+				<p id="modal-message">Are you sure you want to Exit?</p>
+				<div class="modal-buttons">
+					<button id="confirmEx">Yes</button>
+					<button id="cancelEx">No</button>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>	

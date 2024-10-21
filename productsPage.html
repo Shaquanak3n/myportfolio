@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Products Page</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link rel="stylesheet" href="styleProduct.css">
+		<script type= "text/javascript"src="scriptPr2.js" defer></script>
+		
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	</head>
+	<body link= "black" vlink= "black">
+		<header>
+			<div class = "main">
+			
+				<dir class="logo">
+					<img src= "images/Lulu’s High Tea.png">
+				</dir>
+		
+				<a href = "#Top"><h2 class="name">LULU'S HIGH TEA <h3 class="slogan"><q><i>Elevate Your Tea Experience</i></q></h3></h2></a>
+				
+				<ul>
+					<li><a href = "homePage.html">Home</a></li>
+					<li><a href = "aboutUs.html">About</a></li>
+					<li class="active"><a href = "#">Products</a></li>
+					<li><a href= "#Cart">Cart</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<div class = "container">
+			<div class = "first">
+				<h2 class= "move"> Afternoon Tea - $1,000 per person</h2>
+				<p><i> Please select your choice of savouries, sweets, and preferred beverages for your high tea experience. 
+					If  you're unsure about the beverages, simply choose 'An Assortment', and we'll assist you on arrival. 
+				</i></p>
+				
+			</div></br></br>
+			<div class = "persons">
+				<h3 class= "move">Select the Number of Persons <strong>*</strong></h3>
+				<label class= "move">Person(s)</label>
+				<input type = "number" class="numPersons" min="1" placeholder="Enter number" required />
+				<button class = "enter" onclick="setEnterButton()"> Enter</button>
+				<div class="error-message" style="color: red; margin-top: 10px;"></div> <!-- Error message area -->
+			</div>
+			</br>
+			
+			<h3 class = "title"> Select Savouries</h3>
+			
+			<div class = "products-container">
+				
+				<div class = "products" data-name="p-1">
+					<img src = "images/cucumber.jpg" alt = "Cucumber Dill Sandwich"/>
+					<h3>Cucumber Dill Sandwich</h3>
+					<div class = "price">$300</div>
+				</div>
+				
+				
+				
+				<div class = "products" data-name="p-2">
+					<img src = "images/croissant.jpg" alt = "Scrambled Egg Croissant Sandwich"/>
+					<h3>Scrambled Egg & Ham Croissant Sandwich</h3>
+					<div class = "price">$350</div>
+				</div>
+				
+				
+				<div class = "products" data-name="p-3">
+					<img src = "images/salmon1.jpg" alt = "Smoked Salmon Sandwich"/>
+					<h3>Smoked Salmon Cream Cheese & Dill Sandwich</h3>
+					<div class = "price">$350</div>
+				</div>
+				
+			
+				<div class = "products" data-name="p-4">
+					<img src = "images/quiche1.jpg" alt = "Spinach & Feta Quiche"/>
+					<h3>Spinach & Feta Quiche</h3>
+					<div class = "price">$200</div>
+				</div>
+				
+				
+				<div class = "products" data-name="p-5">
+					<img src = "images/coronation.jpeg" alt = "Coronation Chicken Sandwich"/>
+					<h3 class= "pname">Coronation Chicken Sandwich</h3>
+					<div class = "price">$150</div>
+				</div>
+				
+				
+				<div class = "products" data-name="p-6">
+					<img src = "images/croquette2.jpeg" alt = "Bacon and Cheddar Cheese Croquette"/>
+					<h3>Bacon and Cheddar Cheese Croquette</h3>
+					<div class = "price">$300</div>
+				</div>
+				
+			
+			</div><!--Products container end here-->	
+	
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<!-----------------------SWEETS---------------------------------->
+				<h3 class = "title"> Select Sweets</h3>
+				<div class = "products-container">
+					<div class = "products" data-name="p-7">
+					<img src = "images/cherry.jpg" alt = "Vanilla & Cherry Cupcakes"/>
+					<h3>Vanilla & Cherry Cupcakes</h3>
+					<div class = "price">$150</div>
+				</div>
+				
+				
+				
+				<div class = "products" data-name="p-8">
+					<img src = "images/tart1.jpg" alt = "Lemon Curd Tart"/>
+					<h3>Lemon Curd Tart</h3>
+					<div class = "price">$250</div>
+				</div>
+				
+				
+				<div class = "products" data-name="p-9">
+					<img src = "images/scone.jpg" alt = "Strawberry Jam & Chantily Cream Filled Scones"/>
+					<h3>Strawberry Jam & Chantily Cream Filled Scones</h3>
+					<div class = "price">$350</div>
+				</div>
+				
+			
+				<div class = "products" data-name="p-10">
+					<img src = "images/strawberry.webp" alt = "Chocolate Covered Strawberries"/>
+					<h3>Chocolate Covered Strawberries</h3>
+					<div class = "price">$300</div>
+				</div>
+				
+				
+				<div class = "products" data-name="p-11">
+					<img src = "images/fruitcake.jpg" alt = "Fruit Cake"/>
+					<h3>Fruit Cake</h3>
+					<div class = "price">$200</div>
+				</div>
+				
+				
+				<div class = "products" data-name="p-12">
+					<img src = "images/skewer.jpg" alt = "Fruit Skewers"/>
+					<h3>Fruit Skewers</h3>
+					<div class = "price">$250</div>
+				</div>
+				
+				</div><!--Second Products container end here-->
+				
+				</br></br></br>
+				
+				
+				
+				
+				<!-----------------------DRINKS---------------------------------->
+				<h3 class = "title"> Select Beverages</h3>
+				<h4 class = "bevs">Caffeinated</h4>
+				<div class = "products-container">
+						<div class = "products" data-name="p-13">
+					<img src = "images/blueM.jpg" alt = "BMC"/>
+						<h3>Blue Mountain Coffee</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					
+					
+					<div class = "products" data-name="p-14">
+					<img src = "images/EB.webp" alt = "EB"/>
+						<h3>English Breakfast</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					
+					<div class = "products" data-name="p-15">
+					<img src = "images/ED.webp" alt = "ED"/>
+						<h3>Estate Darjeeling</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+				
+					<div class = "products" data-name="p-16">
+					<img src = "images/EG.png" alt = "EG"/>
+						<h3>Earl Grey</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					
+					<div class = "products" data-name="p-17">
+					<img src = "images/MMT.jpg" alt = "MMT"/>
+						<h3 class= "pname">Moroccan Mint</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					
+					<div class = "products" data-name="p-18">
+					<img src = "images/JGT.webp" alt = "JGT"/>
+						<h3>Jasmine Green</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					<div class = "products" data-name="p-19">
+					<img src = "images/CB.jpg" alt = "CB"/>
+						<h3>Cherry Blossom</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					<div class = "products" data-name="p-20">
+					<img src = "images/ACT.jpg" alt = "ACT"/>
+						<h3>An Assortment of Caffeinated Teas</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					
+					
+				</div></br></br>
+				
+				<h4 class = "bevs">Un-caffeinated</h4>
+				
+				<div class = "products-container">	
+					<div class = "products" data-name="p-21">
+					<img src = "images/GLT.jpg" alt = "GLT"/>
+						<h3>Ginger Lemongrass</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					<div class = "products" data-name="p-22">
+					<img src = "images/DB.webp" alt = "DB"/>
+						<h3>Decaf Breakfast</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					<div class = "products" data-name="p-23">
+					<img src = "images/CCT.jpg" alt = "CCT"/>
+						<h3>Chamomile Citrus</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					<div class = "products" data-name="p-24">
+					<img src = "images/RN.jpg" alt = "RN"/>
+						<h3>Raspberry Nectar</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					<div class = "products" data-name="p-25">
+					<img src = "images/blueL.webp" alt = "Blueberry Merlot"/>
+						<h3>Blueberry Merlot</h3>
+						<div class = "price">$150</div>
+					</div>
+					
+					<div class = "products" data-name="p-26">
+					<img src = "images/ADT.jpg" alt = "ADT"/>
+						<h3>An Assortment of Un-caffeinated Teas</h3>
+						<div class = "price">$150</div>
+					</div>
+				</div></br></br>
+				
+				<h4 class = "bevs">Wines</h4>
+				<div class = "products-container">
+				
+					<div class = "products" data-name="p-27">
+					<img src = "images/prosec.webp" alt = "Prosecco"/>
+						<h3>Prosecco</h3>
+						<div class = "price">$350</div>
+					</div>
+					
+					<div class = "products" data-name="p-28">
+					<img src = "images/rose.webp" alt = "Rose"/>
+						<h3>Rosé</h3>
+						<div class = "price">$350</div>
+					</div>
+				</div>	</br></br>
+			<!--Third Products container end here-->	
+
+			</br></br></br>
+			
+		<!--------------
+		----------------------->
+		<div class="cartSection1">
+			<a name="Cart">
+				<div class="title">CART</div>
+			</a>
+			<div class="cart-counter">
+				Items in Cart: <span id="cart-count">0</span>
+			</div>
+
+			<div class="cartSection" id="cart">
+				
+				
+				
+				<div class = "totals">
+					<table class="table">
+					  <thead>
+						<tr>
+							<th colspan = "2" align = "center">Number of Persons</th>
+							<th colspan = "2" align = "center">Cost</th>
+						</tr>
+						<tr>
+							<td colspan="2" id="pers" class="num-persons"></td>
+							<td colspan="2" id="pers" class="cost-persons"></td>
+						</tr>
+						<tr>
+							<td colspan="4" style="height: 20px;"></td> <!-- Spacer Row -->
+						</tr>
+						<tr>
+							<th>Item</th>
+							<th>Qty</th>
+							<th>Price</th>
+							<th>Delete Item</th>
+						</tr>
+					  </thead>
+
+						<tbody id="cart-table-body"></tbody>
+	
+					  <tfoot>
+					  <tr><td colspan="4" id="empty-cell"></td></tr>
+						<tr>
+							<td colspan="2"id="empty-cell"></td>
+							<td colspan="2"><b>Subtotal:</b> <span id="subtotal">$0.00</span></td>
+						</tr>
+						
+						<tr>
+							<td colspan="2" id="empty-cell"></td>
+							<td colspan="2"><b>Tax:</b> <span id="tax">$0.00</span></td>
+						</tr>
+						<tr>
+							<td colspan = "2" id="empty-cell"></td>
+							<td colspan="2"><b>Discount:</b> <span id="discount">$0.00</span></td>
+						</tr>
+						<tr>
+							<td colspan="2" id="empty-cell"></td>
+							<td colspan="2"><b>Total:</b> <span id="total">$0.00</span></td>
+						</tr>
+					  </tfoot>
+					</table>
+				</div>
+				
+				<button onclick="openInvoice()" class="invoice">Check Out</button>
+				<button onclick="cancelCart()" class="cancel">Cancel</button>
+				<button id="exitBtn" onclick="exitPage()" class="exitPage">Exit</button>
+				
+				<div id="modal" class="modal">
+				  <div class="modal-content">
+					<p id="modal-message">Are you sure you want to proceed to checkout?</p>
+					<div class="modal-buttons">
+					  <button id="confirm-btn">Yes</button>
+					  <button id="cancel-btn">No</button>
+					</div>
+				  </div>
+				</div>
+				
+				<div id="modalEx" class="modalEx">
+				  <div class="modal-content">
+					<p id="modal-message">Are you sure you want to Exit?</p>
+					<div class="modal-buttons">
+					  <button id="confirmEx">Yes</button>
+					  <button id="cancelEx">No</button>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+
+		
+		
+		<!-------------------PREVIEW HERE ----------------------->
+			<div class = "products-preview">
+			
+			
+			<!-----------------------SAVOURIES---------------------------------->
+			
+				<div class = "preview" data-target= "p-1" id="p1">
+					<i class = "fas fa-times"></i>
+					<img src = "images/cucumber.jpg" alt = "Cucumber Dill Sandwich"/>
+					<h3>Cucumber Dill Sandwich</h3>
+					<p>Sliced cucumbers layered with dill and cream cheese on soft white bread.</p>
+					<div class = "price">$300</div>
+					<label>Quantity</label>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p1')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-2" id = "p2">
+					<i class = "fas fa-times"></i>
+					<img src = "images/croissant.jpg" alt = "Scrambled Egg Croissant Sandwich"/>
+					<h3>Scrambled Egg & Ham Croissant Sandwich</h3>
+					<p>Scrambled eggs and ham tucked inside a flaky croissant.</p>
+					<div class = "price">$350</div>
+					<label>Quantity</label>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p2')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-3" id = "p3">
+					<i class = "fas fa-times"></i>
+					<img src = "images/salmon1.jpg" alt = "Smoked Salmon Sandwich"/>
+					<h3>Smoked Salmon Cream Cheese & Dill Sandwich</h3>
+					<p>Smoked salmon with cream cheese and dill layered on baguette slices</p>
+					<div class = "price">$350</div>
+					<label>Quantity</label>
+					<select  >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p3')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-4" id = "p4">
+					<i class = "fas fa-times"></i>
+					<img src = "images/quiche1.jpg" alt = "Spinach & Feta Quiche"/>
+					<h3>Spinach & Feta Quiche</h3>
+					<p>Spinach, feta, and eggs baked in a pastry crust.</p>
+					<div class = "price">$200</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p4')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-5" id = "p5">
+					<i class = "fas fa-times"></i>
+					<img src = "images/coronation.jpeg" alt = "Coronation Chicken Sandwich"/>
+					<h3>Coronation Chicken Sandwich</h3>
+					<p>Tender chicken tossed in a creamy curry mayo, generously spread over soft, fresh bread.</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p5')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-6" id = "p6">
+					<i class = "fas fa-times"></i>
+					<img src = "images/croquette2.jpeg" alt = "Bacon and Cheddar Cheese Croquette"/>
+					<h3>Bacon and Cheddar Cheese Croquette</h3>
+					<p>Mashed potatoes, bacon, and cheese shaped, breaded, and fried.</p>
+					<div class = "price">$300</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p6')" class = "cart">Add to Cart</button>
+					</div>
+				</div>	
+					
+					
+					
+					
+				<!-----------------------SWEETS---------------------------------->
+				<div class = "preview" data-target= "p-7" id="p7">
+					<i class = "fas fa-times"></i>
+					<img src = "images/cherry.jpg" alt = "Vanilla & Cherry Cupcakes"/>
+					<h3>Vanilla & Cherry Cupcakes</h3>
+					<p>Vanilla batter baked and topped with vanilla frosting with a cherry on top.</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p7')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-8" id = "p8">
+					<i class = "fas fa-times"></i>
+					<img src = "images/tart1.jpg" alt = "Lemon Curd Tart"/>
+					<h3>Lemon Curd Tart</h3>
+					<p>Buttery pastry crust filled with smooth, tangy lemon curd for a refreshing citrus burst.</p>
+					<div class = "price">$250</div>
+					<label>Quantity</label>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p8')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-9" id = "p9">
+					<i class = "fas fa-times"></i>
+					<img src = "images/scone.jpg" alt = "Strawberry Jam & Chantily Cream Filled Scones"/>
+					<h3>Strawberry Jam & Chantily Cream Filled Scones</h3>
+					<p>Warm, freshly baked scones served with strawberry jam and fluffy Chantilly cream.</p>
+					<div class = "price">$350</div>
+					<label>Quantity</label>
+					<select  >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p9')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-10" id = "p10">
+					<i class = "fas fa-times"></i>
+					<img src = "images/strawberry.webp" alt = "Chocolate Covered Strawberries"/>
+					<h3>Chocolate Covered Strawberries</h3>
+					<p>Fresh strawberries dipped in melted chocolate.</p>
+					<div class = "price">$300</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p10')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-11" id = "p11">
+					<i class = "fas fa-times"></i>
+					<img src = "images/fruitcake.jpg" alt = "Fruit Cake"/>
+					<h3>Fruit Cake</h3>
+					<p>Rich, spiced cake packed with rum-soaked fruits for a bold, decadent flavor.</p>
+					<div class = "price">$200</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p11')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-12" id = "p12">
+					<i class = "fas fa-times"></i>
+					<img src = "images/skewer.jpg" alt = "Fruit Skewers"/>
+					<h3>Fruit Skewers</h3>
+					<p>Fresh fruits cut and arranged on skewers.</p>
+					<div class = "price">$300</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p12')" class = "cart">Add to Cart</button>
+					</div>
+				</div>	
+					
+					
+					
+					
+				
+				<!--DRNKS-->
+				
+				<div class = "preview" data-target= "p-13" id="p13">
+					<i class = "fas fa-times"></i>
+					<img src = "images/blueM.jpg" alt = "BMC"/>
+					<h3>Blue Mountain Coffee</h3>
+					<p>Jablum Jamaica Blue Mointain Coffe</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p13')" class = "cart">Add to Cart</button>
+					</div>
+				</div> <!--Preview end-->
+				
+				<div class = "preview" data-target= "p-14" id = "p14">
+					<i class = "fas fa-times"></i>
+					<img src = "images/EB.webp" alt = "EB"/>
+					<h3>English Breakfast</h3>
+					<p>Twinings English Breakfast Tea Bags</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p14')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-15" id = "p15">
+					<i class = "fas fa-times"></i>
+					<img src = "images/ED.webp" alt = "ED"/>
+					<h3>Estate Darjeeling</h3>
+					<p>Glenburn Estate Darjeeling Tea Sachets</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select  >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p15')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-16" id = "p16">
+					<i class = "fas fa-times"></i>
+					<img src = "images/EG.png" alt = "EG"/>
+					<h3>Earl Grey</h3>
+					<p>Tetley Earl Grey Tea Bags</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p16')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-17" id = "p17">
+					<i class = "fas fa-times"></i>
+					<img src = "images/MMT.jpg" alt = "MMT"/>
+					<h3>Moroccan Mint</h3>
+					<p>Brewed with fresh Moroccan mint leaves, and sugar, served hot.</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick = "addToCart('p17')" class = "cart">Add to Cart</button>
+					</div>
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-18" id = "p18">
+					<i class = "fas fa-times"></i>
+					<img src = "images/JGT.webp" alt = "JGT"/>
+					<h3>Jasmine Green </h3>
+					<p>Twinings Jasmine Green Tea Bags</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p18')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-19" id = "p19">
+					<i class = "fas fa-times"></i>
+					<img src = "images/CB.jpg" alt = "CB"/>
+					<h3>Cherry Blossom</h3>
+					<p>Wellness Collection Japanese Cherry Blossom Tea Bags</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p19')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-20" id = "p20">
+					<i class = "fas fa-times"></i>
+					<img src = "images/ACT.jpg" alt = "ACT"/>
+					<h3>An Assortment of Caffeinated Teas</h3>
+					<p>A box of all stated caffeinated teas are provided for selection.</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p20')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-21" id = "p21">
+					<i class = "fas fa-times"></i>
+					<img src = "images/GLT.jpg" alt = "GLT"/>
+					<h3>Ginger Lemongrass</h3>
+					<p>Garden of the Andes Ginger Lemongrass Tea Bags</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p21')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-22" id = "p22">
+					<i class = "fas fa-times"></i>
+					<img src = "images/DB.webp" alt = "DB"/>
+					<h3>Decaf Breakfast</h3>
+					<p>Twinings Decaf Breakfast Tea Bags</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p22')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-23" id = "p23">
+					<i class = "fas fa-times"></i>
+					<img src = "images/CCT.jpg" alt = "CCT"/>
+					<h3>Chamomile Citrus</h3>
+					<p>Mighty Leaf Chamomile Citrus Tea Bags</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p23')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-24" id = "p24">
+					<i class = "fas fa-times"></i>
+					<img src = "images/RN.jpg" alt = "RN"/>
+					<h3>Raspberry Nectar</h3>
+					<p>Tea Forté Raspberry Nectar Sachets</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p24')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-25" id = "p25">
+					<i class = "fas fa-times"></i>
+					<img src = "images/blueL.webp" alt = "Blueberry Merlot"/>
+					<h3>Blueberry Merlot</h3>
+					<p>Tea Forté Blueberry Merlot Sachets</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p25')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-26" id = "p26">
+					<i class = "fas fa-times"></i>
+					<img src = "images/ADT.jpg" alt = "ADT"/>
+					<h3>An Assortment of Un-caffeinated Teas</h3>
+					<p>A box of all stated un-caffeinated teas are provided for selection.</p>
+					<div class = "price">$150</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p26')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-27" id = "p27">
+					<i class = "fas fa-times"></i>
+					<img src = "images/prosec.webp" alt = "Prosecco"/>
+					<h3>Prosecco </h3>
+					<p>A glass of Saraceni Prosecco</p>
+					<div class = "price">$350</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p27')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				<div class = "preview" data-target= "p-28" id = "p28">
+					<i class = "fas fa-times"></i>
+					<img src = "images/rose.webp" alt = "Rose"/>
+					<h3>Rosé</h3>
+					<p>A glass of Waterford South African Rosé</p>
+					<div class = "price">$350</div>
+					<label>Quantity</label>
+					<select >
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						</select>
+					<div class = "buttons">
+						<button onclick="addToCart('p28')" class = "cart">Add to Cart</button>
+					</div>
+					
+				</div><!--Preview end-->
+				
+				
+			</div><!--Products Preview end-->
+			
+					
+			
+			
+			
+		</div><!--Container ends here-->
+	<a class="gotopbtn" href="#Top"> <i class="fas fa-arrow-up"></i> </a>
+	
+		<div class= "footer">
+			<footer>
+			<table class="bottom">
+			<tr>
+				<td>
+					<dir class="logo">
+						<img src= "images/Lulu’s High Tea.png">
+					</dir>
+				</td>
+				<td colspan="2"></td>
+				<td>
+					<p>&copy; 2024 Shaquana Kenyon. All rights reserved.</p>
+					<a href="mailto:2306527@utech.edu.jm">2306527@utech.edu.jm</a>
+					</br></br>
+					<a href= "#Top">Go to Top of Page</a></br>
+				</td>
+			</tr>	
+			<table>	
+			</footer>
+		</div>
+	</body>
+</html>	

@@ -1,0 +1,101 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Times New Roman;
+}
+
+body{
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container
+{
+	text-align: center;
+	height: 545px;
+	width:100%;
+	position: relative;
+	display: flex; 
+    flex-direction: column; 
+    gap: 30px; 
+    align-items: center; 
+
+}
+.container, h1
+{
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+.backgroundImg
+{
+	height: 100%;
+	width:100%;
+	background-image: url("images/tea1.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: absolute;
+	opacity:0.2;
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.forms
+{
+	position: absolute;
+	border-radius: 20px;
+	border: 2px solid white;
+	max-width: 300px;
+	max-height: 75%;
+	padding: 25px;
+	padding-top: 20px;
+	justify-content: center;
+	background-color: white;
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+strong
+{
+	color: red;
+}
+
+input[type="text"],
+input[type="password"]
+{
+	border: none;
+	border-bottom: 2px solid black;
+	outline: none;
+	width: 100%;
+	padding: 10px;
+}
+
+button
+{
+	border: none;
+	background-color: #E8F2DE;
+	padding: 10px;
+	border-radius: 30px;
+	width: 100%;
+}
+
+button:hover {
+    background-color: #A6C093; 
+}
+
+#message {
+    font-size: 12px;
+    margin-top: 10px;
+
+}
